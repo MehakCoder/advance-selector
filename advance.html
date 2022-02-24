@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Basic Layout</title>
+    <style>
+       *{
+           color: red;
+       }
+       body{
+                font-family:arial,helvetica; 
+                background-color: slategray;
+                margin: 0;
+                padding: 0;
+            }
+       #wrapper{
+           border: 0px solid black;
+           width: 1000px;
+           background: white;
+           margin: 0 auto;
+       }
+       #header{
+           height: 100px;
+           font-family: arial;
+           border-bottom: 1px solid black;
+       }
+       #header h1{
+           padding: 30px 0 0 20px;
+       }
+       #menu{
+        border-bottom: 1px solid black;
+       }
+       #menu ul{
+           margin: 0;
+           padding: 0;
+       }
+       #menu li{
+           display: inline-block;
+       }
+       #Menu li a{
+                display: block;
+                padding: 10px 15px;
+                text-decoration: none;
+                color: black;
+            }
+            #Menu li a:hover{
+                background: burlywood;
+                color: aqua;
+            }
+            #content{
+                width: 800px;
+                min-height: 500px;
+                float:left;
+                padding: 15px;
+                box-sizing: border-box;
+                position: relative;
+                border-right: 1px solid black;
+            }
+            #sidebar{
+                background:white;
+                width: 200px;
+                min-height: 500px;
+                float: right;
+            }
+            #sidebar a{
+                 text-decoration: none;
+                color: black;
+            }
+            #footer{
+                background:white;
+                padding: 5px 10px;
+                text-align: right;
+                clear: both;
+                border-top: 1px solid black;
+            }
+            #test{
+                width: 100px;
+                height: 100px;
+                background: gold;
+                position: sticky;
+                top: 30px;
+                left: 100px;
+            }
+            @media screen and (max-width:1020px){
+                #wrapper{
+                    width: 800px;
+                } 
+                #content{
+                    width: 80%;
+                }
+                #sidebar{
+                    width: 18%;
+                }
+            }
+             @media screen and (max-width:810px){
+                #wrapper{
+                    width: 500px;
+                }  
+                  #content{
+                    width: 70%;
+                }
+                #sidebar{
+                    width: 29%;
+                }
+            }
+
+            @media screen and (max-width:510px){
+                #wrapper{
+                    width: auto;
+                }  
+                 #content{
+                    width: 100%;
+                    float: none; 
+                }
+                #sidebar{
+                    width: 100%;
+                    float: none; 
+            }
+                 #header h1{
+                padding: 30px 0 0 0;
+                     text-align: center;
+            }
+    </style>
+</head>
+
+<body>
+    <div id="wrapper">
+            <div id="header">
+                <h1>Quick Tech</h1>  
+            </div>
+            <div id="menu">
+                <ul>
+                    <li><a href="">Home</a></li>                
+                    <li><a href="">About us</a></li>                 <li><a href="">Gallery</a></li>                 <li><a href="">contact us</a></li>     </ul>
+            </div>
+            <div id="content">
+            <h2>Design Basic Layout</h2>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containin  </p>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containin </p>
+             </div>
+            
+            <div id="sidebar">
+                <ul>
+                    <li><a href="">Home</a></li>                
+                    <li><a href="">About us</a></li>                 <li><a href="">Gallery</a></li>               <li><a href="">contact us</a></li>                
+                </ul>
+            </div>
+            <div id="footer">
+                Quick Tech @copywrite2021
+            </div>
+
+        </div>        
+</body>
+
+</html>
